@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  app:
+    image: evm_lp_indexer:latest
+    build:
+      context: .
+    restart: always
+    env_file:
+      - ./.env.app
+    ports:
+      - 8005:8000
+    network_mode: host
