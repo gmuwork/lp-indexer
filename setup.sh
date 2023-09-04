@@ -14,7 +14,7 @@ echo "Creating a new env in './venv/'"
 
 python3 -m venv venv
 source venv/bin/activate
-python3 -m pip install --upgrade pip setuptools pip-tools pre-commit
+python3 -m pip install --upgrade pip setuptools pip-tools pre-commit virtualenv
 
 echo "Installing dependencies"
 pip install -r requirements.txt

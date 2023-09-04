@@ -36,6 +36,7 @@ typed-ast
 pandas
 jupyter
 web3
-dotenv
+python-dotenv
 django
 marshmallow
+matplotlib

@@ -40,7 +40,7 @@ class TransactionEvent(django_db_models.Model):
     class Meta:
         app_label = "src"
         db_table = "lp_pool_transaction_event"
-        indexes = [django_db_models.Index(fields=["name", "transaction_id"])]
+        indexes = [django_db_models.Index(fields=["log_index", "transaction_id"])]
 
 
 class LiquidityPoolImporterBlockReference(django_db_models.Model):

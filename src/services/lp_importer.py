@@ -126,7 +126,7 @@ class LiquidityPoolImporter(object):
 
                 event = models.TransactionEvent.objects.filter(
                     transaction_id=tx.id,
-                    name=transaction_event.name,
+                    log_index=transaction_event.log_index,
                 ).first()
                 if not event:
                     event = models.TransactionEvent.objects.create(
